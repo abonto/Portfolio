@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Referencia de la hoja de estilo de Css -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="" href="reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- Fonte del Proyecto Raleway -->
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+        <title> Mi Portfolio</title>
+    </head>
+
+    <body>
+        <div class="tudo">
+        <section class="menu">
+            <header class="menu__header">
+                <img src="assets\vector.png" class="menu__logo">
+            </header>
+            <nav>
+                <ul class="menu__list">
+                    <li class="menu__list__item"><a href="#sobre-mi" class="menu__item">Sobre mi</a></li>
+                    <li class="menu__list__item"><a href="#skills" class="menu__item">Skills</a></li>
+                    <li class="menu__list__item"><a href="#hobbies" class="menu__item">Hobbies</a></li>
+                    <li class="menu__list__item"><a href="#formacion" class="menu__item">Formación</a></li>
+                    <li class="menu__list__item"><a href="#xp" class="menu__item">Proyectos</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <div class="banner__container">
+            <img src="assets/banner2.png" alt="banner" class="banner">
+        </div>
+
+        <!-- Sección del Header/Title/Hero -->
+        <section class="titulo" id="tituloC">
+            <img class="titulo__profile" src="assets\download.png">
+            <div class="titulo-info">
+                    <h2 class="titulo__titulo">Hola, mi nombre es Augusto Bontomasi</h2>
+                    <h3 class="titulo__subsection">Soy estudiante en UTN en la Licenciatura de Sistemas de Informacion, en Argentina y actualmente estoy participando del proyecto Oracle ONE en Alura Latam.</h3>
+                    <ul class="titulo__network">
+                        <li class="titulo__network__item"><a href="https://github.com/abonto" class="titulo__links">Github <img src="assets\arrow.png"> </a></li>
+                        <li class="titulo__network__item"><a href="www.linkedin.com/in/abonto" class="titulo__links">Linkedin <img src="assets\arrow.png"></a></li>
+                        <li class="sobre__network__item"><a href="https://drive.google.com/file/d/15bthddZfa7ukR2i6L5E1U5B7Fb5Jx8Sm/view?usp=sharing" class="titulo__links">Currículum <img src="assets\arrow.png"></a></li>
+                    </ul>
+            </div>
+        </section>
+
+        <section class="about" id="aboutC">
+            <div class="about__container">
+                <h3 class="about__title">Sobre mi</h3>
+                <p class="about__paragraph">Hola! Soy Augusto Bontomasi, de Argentina y soy estudiante de sistemas en la UTN y soy parte del programa ONE.
+
+                <br><br>
+                
+                Busco aplicar los conocimientos aprendidos en proyectos tanto personales como profesionales.
+
+                <br><br>
+
+                Realice cursos de .NET y MySQL en Educacion IT y me encuentro realizando cursos de Kotlin y Springboot para poder mejorar la logica y el desarrollo, ademas estoy realizando el programa ONE de Oracle y Alura de desarrollo FrontEnd y Java.</p>
+            </div>
+        </section>
+
+        <section class="skills" id="skills">
+            <h3 class="skills__title">Skills</h3>
+                <div class="skills__line">
+                    <div class="skills__box">
+                        <div class="skills__imagen skills__imagenCS"></div>
+                        <p class="skills__nombre">C#</p>
+                    </div>
+
+                    <div class="skills__box">
+                        <div class="skills__imagen skills__imagenCP"></div>
+                        <p class="skills__nombre">C++</p>
+                    </div>
+
+                    <div class="skills__box">
+                        <div class="skills__imagen skills__imagenJ"></div>
+                        <p class="skills__nombre">Java</p>
+                    </div>
+
+                    <div class="skills__box">
+                        <div class="skills__imagen skills__imagenJS"></div>
+                        <p class="skills__nombre">JS</p>
+                    </div>
+
+                    <div class="skills__box">
+                        <div class="skills__imagen skills__imagenH"></div>
+                        <p class="skills__nombre"> HTML</p>
+                    </div>
+
+                    <div class="skills__box">
+                        <div class="skills__imagen skills__imagenP"></div>
+                        <p class="skills__nombre">Python</p>
+                    </div>
+
+                    <div class="skills__box">
+                        <div class="skills__imagen skills__imagenCSS"></div>
+                        <p class="skills__nombre">CSS</p>
+                    </div>
+            </div>
+        </section>
+
+        <section class="hobbies" id="hobbies">
+            <h3 class="hobbies__title">Hobbies</h3>
+                <div class="hobbies__line">
+                    <div class="hobbies__box">
+                        <div class="hobbies__imagen hobbies__imagenL"></div>
+                        <p class="hobbies__nombre">Leer</p>
+                    </div>
+
+                    <div class="hobbies__box">
+                        <div class="hobbies__imagen hobbies__imagenT"></div>
+                        <p class="hobbies__nombre">Ver series</p>
+                    </div>
+
+                    <div class="hobbies__box">
+                        <div class="hobbies__imagen hobbies__imagenC"></div>
+                        <p class="hobbies__nombre">Cocinar</p>
+                    </div>
+            </div>
+        </section>
+
+        <section class="academic" id="formacion">
+            <h2 class="academic__title" >Formación académica</h2>
+            <div class="academic__courses">
+                <div class="academic__courses__box">
+                    <h3 class="academic__courses__item__title">Licenciatura en Sist. de Informacion</h3>
+                    <div class="academic__courses__list">
+                        <img src="assets/utn-2.svg" class="academic__courses__item__img">
+                    </div>
+                    <p class="academic__courses__item__subtitle">2021 - UTN</p>
+                </div>
+                <div class="academic__courses__box">
+                    <h3 class="academic__courses__item__title">Desarrollo FontEnd y BackEnd</h3>
+                    <div class="academic__courses__list">
+                        <img src="assets/logoAlura.svg" class="academic__courses__item__img">
+                    </div>
+                    <p class="academic__courses__item__subtitle">2022 - Alura</p>
+                </div>
+                <div class="academic__courses__box">
+                    <h3 class="academic__courses__item__title">C# .NET Developer</h3>
+                    <div class="academic__courses__list">
+                        <img src="assets/1647956251519.jpg" class="academic__courses__item__img">
+                    </div>
+                    <p class="academic__courses__item__subtitle">2019 - Educacion IT</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience" id="xp">
+            <h2 class="experience__section__title" >Proyectos</h2>
+            <div class="experience__list">
+                <div class="experience__box">
+                    <img src="assets/ahorcado.png" alt="ahorcado" class="experience__imagen">
+                    <div class="experience__info">
+                        <div>
+                            <h3 class="experience__titulo">Juego Ahorcado</h3>
+                            <p class="experience__descripcion">Challenge Oracle de ahorcado</p>
+                        </div>
+                        <div class="experience__botones">
+                            <a class="experience__boton experience__repos" href="https://github.com/abonto/Oracle--Challenge-1---Ahorcado">Repositorio</a>
+                            <a href="https://abonto.github.io/Oracle--Challenge-1---Ahorcado/" class="experience__boton experience__probar">Probar</a>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="experience__box">
+                    <img src="assets/codificador.png" class="experience__imagen">
+                    <div class="experience__info">
+                        <div>
+                            <h3 class="experience__titulo">Decodificador</h3>
+                            <p class="experience__descripcion">Challenge Oracle de un decodificador/codificador</p>
+                        </div>
+                        <div class="experience__botones">
+                            <a class="experience__boton experience__repos" href="https://github.com/abonto/Oracle--Challenge-1---Decoder">Repositorio</a>
+                            <a href="https://abonto.github.io/Oracle--Challenge-1---Decoder/" class="experience__boton experience__probar">Probar</a>
+                        </div>
+                    </div>
+                </div>  
+            </div>  
+
+            <!-- Sección de Contacto -->
+            <section class="formcontato" id="contacto">
+                <div  class="formcontato__contacto">
+                    <h2 class="formcontato__title">Contacto</h2>
+                    <h3 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
+                    <form class="formcontato__form" name="form">
+                        <ul class="formcontacto__error" id="errornombre"></ul>
+                        <input type="text" placeholder="Nombre" id="nombre" class="formcontacto__input">
+                        <ul class="formcontacto__error" id="errormail"></ul>
+                        <input type="text" placeholder="e-mail" class="formcontacto__input" id="mail">
+                        <ul class="formcontacto__error" id="errorasunto"></ul>
+                        <input type="text" placeholder="Asunto" class="formcontacto__input" id="asunto">
+                        <textarea id="mensaje" rows="10" placeholder="Mensaje" class="formcontacto__input formmensaje" ></textarea>
+                        <ul class="formcontacto__error" id="errormensaje"></ul>
+                        <input type="button" class="formcontacto__boton" value="Enviar">
+                    </form>
+
+                    <p class="formcontacto__enviado">Mensaje enviado con exito</p>
+
+                </div>
+            </section>
+
+            <!-- Sección de Footer -->
+            <section class="footer">
+                <div class="footer__container">
+                    <p class="footer__nombre">Augusto Bontomasi</p>
+                    <div class="footer__links">
+                        <a href="https://github.com/abonto" class="footer__link"><img src="assets/git.svg" alt="git"></a>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+    <!-- Script del documento JavaScript -->
+    <script src="validacion.js"></script>
+    </div>
+    </body>
+</html>

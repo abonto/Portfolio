@@ -1,0 +1,823 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root{
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --cor-de-fundo: #F5F5F5;
+   --cor-de-link: #000;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+.banner__container{
+    width: 100%;
+}
+
+.banner{
+    width: 100%;
+    height: 250px;
+}
+
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
+
+Lo que es el BEM?
+
+BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
+desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
+independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
+con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
+
+Enlace de la documentación oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sección Menu*/
+
+
+.menu{
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__header{
+    display: flex;
+    margin-right: 40px;
+    flex-wrap: wrap;
+}
+
+.menu__logo{
+    width: 60px;
+    height: 60px;
+    margin: 20px auto 20px 40px;
+}
+
+.menu__list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+    width: 653px;
+    height: 19px;
+}
+
+.menu__item{
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    transform: all 350ms;
+    color: #FFF;
+}
+
+.menu__item:hover{
+    color: aqua;
+}
+
+/*Sección Title*/
+
+.titulo{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    margin: 50px 10%;
+}
+
+.titulo__profile{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin: 15px;
+}
+
+.titulo__info{
+    display: flex;
+    width: 90%;
+    height: 80%;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto 50px auto 0px;
+}   
+
+.titulo__titulo{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.titulo__subsection{
+    font-family: 'Raleway';
+    font-size: 1rem;
+    line-height: 1.1rem;
+    margin-bottom: 5px;
+    margin-top: 0.5rem;
+}
+
+.titulo__network{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 1.4rem;
+}
+
+.titulo__network__item{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.titulo__links{
+    font-weight: 400;
+    color: rgb(112, 112, 112);
+    text-decoration: none;
+    transition: all 250ms;
+}
+
+.titulo__links:hover{
+    font-weight: 600;
+    text-decoration: overline;
+    color: #000;
+}
+
+/*Sección About*/
+
+#aboutC{
+    background-color: darkgrey;
+    padding: 50px 0 0;
+}
+
+.about__container{
+    width: 80%;
+    padding-bottom: 35px;
+    margin: 0 auto;
+}
+
+.about__title{
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #FFF;
+    font-weight: 650;
+    margin-bottom: 25px;
+}
+
+.about__paragraph{
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    color: #FFF;
+    font-weight: 400;
+    line-height: 1.1rem;
+}
+
+/*Seccion Skills*/
+
+#skills{
+    margin: 50px 0;
+}
+
+.skills__title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.skills__line{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px;
+}
+
+.skills__box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: rgb(54, 51, 51);
+    box-shadow: 0 0 15px rgb(0, 0, 0,0.09);
+    transition: all 150ms;
+}
+
+.skills__box:hover{
+    transform: scale(1.1, 1.1);
+}
+
+.skills__imagen{
+    width: 45px;
+    height: 45px;
+    margin-bottom: 14px;
+    margin-top: 19px;
+}
+
+.skills__nombre{
+    font-family: 'Montserrat',sans-serif;
+    color: #FFF;
+    font-weight: 400;
+}
+
+.skills__imagenCS{
+    background: url(assets/csharp.svg) center / cover no-repeat;
+}
+
+.skills__imagenCP{
+    background: url(assets/cplus.svg) center / cover no-repeat;
+}
+
+.skills__imagenJ{
+    background: url(assets/java-4-logo.svg) center / cover no-repeat;
+}
+
+.skills__imagenJS{
+    background: url(assets/javascriptlogo.png) center / cover no-repeat;
+}
+
+.skills__imagenH{
+    background: url(assets/html.svg) center / cover no-repeat;
+}
+
+.skills__imagenP{
+    background: url(assets/Python-logo-notext.svg) center / cover no-repeat;
+}
+
+.skills__imagenCSS{
+    background: url(assets/css.svg) center / cover no-repeat;
+}
+
+/*Sección Hobbies*/
+
+#hobbies{
+    margin: 40px 0;
+}
+
+.hobbies__title{
+    font-family: 'Montserrat',sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.hobbies__line{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 85%;
+    margin: 25px 7%;
+}
+
+.hobbies__box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: rgb(54, 51, 51);
+    box-shadow: 0 0 15px rgb(0, 0, 0,0.09);
+    transition: all 150ms;
+}
+
+.hobbies__box:hover{
+    transform: scale(1.1,1.1);
+}
+
+.hobbies__nombre{
+    font-family: 'Montserrat',sans-serif;
+    color: #FFF;
+    font-weight: 400;
+}
+
+.hobbies__imagen{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 14px;
+    margin-top: 19px;
+}
+
+.hobbies__imagenC{
+    background: url(assets/cooking-svgrepo-com.svg) center / cover no-repeat;
+}
+
+.hobbies__imagenL{
+    background: url(assets/closed-book.svg) center / cover no-repeat;
+}
+
+.hobbies__imagenT{
+    background: url(assets/television-svgrepo-com\ \(1\).svg) center / cover no-repeat;
+}
+
+/* Experiencia Académica*/
+
+#formacion{
+    background-color: rgb(245, 197, 92);
+    padding: 50px 0;
+}
+
+.academic__title{
+    font-family: 'Montserrat',sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #FFF;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.academic__courses{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 95%;
+    margin: 0 3%;
+}
+
+.academic__courses__box{
+    width: 300px;
+    margin: 15px 15px 12px 15px;
+}
+
+.academic__courses__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	width: 250px;
+	height: 200px;
+    background-color: rgba(245, 245, 245, 0.301);
+    border-radius: 10px;
+}
+
+.academic__courses__item__img{
+    width: 150px;
+}
+
+.academic__courses__item__title{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1rem;
+    color: rgb(10, 10, 10);
+    margin: 10px auto 10px auto;
+}
+
+.academic__courses__item__subtitle{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 300;
+    color: #FFF;
+    margin: 5px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* experiencia*/
+
+#xp{
+    margin: 45px 0;
+}
+
+.experience__section__title{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.experience__box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 100px auto 0 auto;
+    align-items: flex-start;
+}
+
+.experience__imagen{
+    height: 225px;
+    box-shadow: 0px 0px 10px #1d1d1d17;
+}
+
+.experience__info{
+    display: flex;
+    margin: 0 20px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 250px;
+}
+
+.experience__titulo{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 500;
+    text-align: start;
+    font-size: 1rem;
+    margin: 0 5px 5px 5px;
+}
+
+.experience__descripcion{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 350;
+    font-size: 1rem;
+    margin: 3px;
+}
+
+.experience__botones{
+    margin: 4px;
+}
+
+.experience__boton{
+    text-decoration: none;
+    padding: 7px 20px;
+}
+
+.experience__repos{
+    background-color: rgb(255, 198, 9);
+    border: 1px solid #000;
+    font-weight: 250;
+    font-family: 'Montserrat',sans-serif;
+    border-radius: 10px;
+    transition: all 150ms;
+}
+
+.experience__repos:hover{
+    background-color: rgb(216, 141, 3);
+}
+
+.experience__probar{
+    border: 1px solid #000;
+    background-color: #FFF;
+    font-weight: 250;
+    font-family: 'Montserrat',sans-serif;
+    border-radius: 10px;
+    transition: all 150ms;
+}
+
+.experience__probar:hover{
+    background-color: rgb(29, 255, 9);
+}
+
+/*Contacto*/
+
+#contacto{
+    background-color: rgb(63, 63, 63);
+    margin: 100px 0 0;
+}
+
+.formcontato__contacto{
+    width: 80%;
+    padding: 45px 0;
+    margin: 0px 10px;
+}
+
+.formcontato__title{
+    text-transform: uppercase;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 15px;
+}
+
+.formcontato__subtext{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 250;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #FFF;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.formcontato__form{
+    width: 70%;
+    margin: 20px auto;
+}
+
+.formcontacto__input{
+    color: #FFF;
+    border: none;
+    outline-style: none;
+    font-size: 15px;
+    width: calc(100% - 20px);
+    margin: 4px 0;
+    background-color: #303030;
+}
+
+.formmensaje{
+    resize: none;
+}
+
+.formcontacto__input::placeholder{
+    color: grey;
+    text-align: center;
+}
+
+.mostrarerror{
+    display: block;
+}
+
+.formcontacto__error{
+    font-family: 'Montserrat',sans-serif;
+    color: rgb(252, 72, 72);
+    text-align: center;
+}
+
+.formcontacto__boton{
+    font-family: 'Montserrat',sans-serif;
+    width: 100%;
+    border-radius: 15px;
+    margin: 20px 0px;
+    font-size: 0.7rem;
+    color: #000;
+    font-weight: 450;
+}
+
+.formcontacto__boton:hover{
+    transform: scale(1.1,1.1);
+    cursor: pointer;
+    background-color: rebeccapurple;
+}
+
+.formcontacto__enviado{
+    text-align: center;
+    font-weight: 350;
+    font-family: 'Montserrat',sans-serif;
+    display: none;
+    color: #FFF;
+}
+
+.footer{
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.082);
+}
+
+.footer__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__nombre{
+    font-size: 15px;
+    font-family: 'Montserrat',sans-serif;
+    margin: 0 10px;
+    color: rgb(2, 2, 2);
+}
+
+.footer__logo{
+    width: 12px;
+    height: 12px;
+    margin: 0px 5px;
+}
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+@media screen and (max-width:480px){
+
+    .banner__container{
+        overflow: hidden;
+    }
+
+    .banner{
+        height: 250px;
+        width: initial;
+    }
+
+    .menu__header{
+        display: none;
+        width: 100%;
+    }
+
+    .menu__logo{
+        width: 60px;
+        height: 60px;
+        margin: 20px auto 20px 20px;
+        position: absolute;
+    }
+
+    .menu__header .menu__item:last-child, .menu__item:nth-child(5){
+        display: block;
+    }
+
+    .titulo__profile{
+        border: 2px double black;
+        width: 100%;
+    }
+
+    .titulo__titulo{
+        text-align: center;
+    }
+
+    .skills__box{
+        width: 25%;
+        margin: 5px;
+    }
+
+    .skills__box:hover{
+        transform: scale(1,1);
+    }
+
+    .hobbies__box{
+        width: 100%;
+    }
+
+    .experience__imagen{
+        width: 100%;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        height: auto;
+    }
+
+    .experience__box{
+        margin: 40px auto 0 auto;
+        background-color: #FFF;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 80%;
+    }
+
+    .experience__info{
+        height: 150px;
+    }
+
+    .experience__titulo{
+        color: black;
+        text-align: center;
+        font-size: 1rem;
+        margin-top: 15px;
+    }
+
+    .experience__descripcion{
+        color: black;
+        text-align: center;
+    }
+
+    .experience__botones{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .experience__repos{
+        margin: 0px 5px;
+        background-color: rgb(255, 198, 9);
+        font-weight: 500;
+        width: 100%;
+        text-align: center;
+        color: #FFF;
+    }
+
+    .experience__probar{
+        width: 100%;
+        text-align: center;
+        background-color: rgb(29, 255, 9);
+        font-weight: 400;
+        margin: 0px 5px;
+    }
+
+    #contacto{
+        margin: 50px 0 0;
+    }
+
+    .formcontato__contacto{
+        width: 80%;
+        margin: 0px 10%;
+    }
+
+    .formcontato__form{
+        width: 90%;
+    }
+
+    .formcontato__subtext{
+        font-size: .85rem;
+    }
+
+}
+
+/*Tablet*/
+@media (max-width: 1024px) {
+
+    .menu__header .menu__item{
+        display: none;
+    }
+
+    .menu__header .menu__item:last-child, .menu__item:nth-child(5){
+        display: block;
+    }
+    
+    .titulo{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px 10% 50px 10%;
+    }
+
+    .titulo__info{
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .titulo__titulo{
+        text-align: center;
+    }
+
+    .titulo__profile{
+        width: 40%;
+        order: -1;
+        margin: 25px;
+        border: 2px solid grey;
+        height: auto;
+    }
+
+    .titulo__subsection{
+        text-align: center;
+    }
+
+    .titulo__network{
+        justify-content: space-evenly;
+    }
+
+    .titulo__network__item{
+        margin: 10px;
+    }
+
+    .skills__box{
+        width: 120px;
+    }
+
+    .hobbies__box{
+        width: 30%;
+    }
+
+    .experience__list{
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .experience__box{
+        width: 60%;
+        padding: 20px;
+        margin: 45px auto 0 auto;
+        border-radius: 15px;
+    }
+
+    .experience__info ,.experience__imagen{
+        height: auto;
+        width: 100%;
+    }
+
+    .experience__titulo{
+        text-align: center;
+        color: rgb(20, 19, 19);
+        margin-top: 20px;
+    }
+
+    .experience__descripcion{
+        text-align: center;
+        color: rgb(17, 17, 17);
+    }
+
+    .experience__botones{
+        display: flex;
+        margin-top: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .formcontato__form{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+}
